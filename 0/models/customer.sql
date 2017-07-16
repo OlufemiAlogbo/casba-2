@@ -1,0 +1,8 @@
+CREATE TABLE CUSTOMER (
+  ID int NOT NULL,
+  Email varchar(255),
+  ToC TIMESTAMP,
+  Primary Key(ID)
+);
+
+INSERT INTO CUSTOMER (ID) VALUES (1);

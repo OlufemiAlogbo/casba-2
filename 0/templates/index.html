@@ -1,0 +1,382 @@
+{% extends "base.html" %}
+
+{% block content %}
+<nav id="infinityNav" class="navmenu menu-side navmenu-default navmenu-fixed-left offcanvas" role="navigation">
+  <ul class="list-unstyled push-menu-items pm-title text-center">
+    <li class="push-menu-title">
+      <span> CASBA </span>
+    </li>
+  </ul>
+  <div id="push-menu-nav">
+    <ul class="list-unstyled push-menu-items text-center">
+      <li class="push-menu-item">
+        <a href="#landing" class="smooth">home</a>
+      </li>
+      <li class="push-menu-item">
+        <a href="#features" class="smooth">features</a>
+      </li>
+      <li class="push-menu-item">
+        <a href="#video" class="smooth">video</a>
+      </li>
+      <li class="push-menu-item">
+        <a href="#whyus" class="smooth">why us?</a>
+      </li>
+      <li class="push-menu-item">
+        <a href="#information" class="smooth">information</a>
+      </li>
+    </ul>
+  </div>
+  <div class="menu-store-btn-container">
+    <ul class="available-on-menu list-unstyled">
+      <li>
+        <span class="landing-availability">Available for</span>
+      </li>
+      <li>
+        <i class="fa fa-desktop"></i>
+      </li>
+      <li>
+        <i class="fa fa-tablet"></i>
+      </li>
+      <li>
+        <i class="fa fa-mobile-phone"></i>
+      </li>
+    </ul>
+    <a href="#" class="btn btn-store-menu"><img src="{{ url_for('static',filename='img/stores/btn-app-store.png') }}" class="img-responsive" alt="app store"></a>
+
+  </div>
+</nav>
+<div class="push-menu-container">
+  <div class="navbar navbar-default navbar-fixed-top push-wrapper">
+    <div class="push-menu-button" data-toggle="offcanvas" data-target="#infinityNav" data-canvas="body">
+      <button type="button" class="navbar-toggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <span class="menu-text">Menu</span>
+    </div>
+  </div>
+</div>
+<!-- Landing section -->
+<section id="landing">
+  <div class="container">
+    <!-- Main Content Inner -->
+    <div class="row margin-lg no-margin-bottom">
+      <div class="col-lg-4 col-md-4 col-sm-6 visible-lg visible-md visible-sm">
+        <!--Device Container-->
+        <img src="{{ url_for('static',filename='img/app-top.png') }}" class="img-responsive" alt="">
+        <!--/Device Container-->
+      </div>
+      <!--Main landing content-->
+      <div class="landing-content col-lg-8 col-md-8 col-sm-6 col-xs-12">
+        <div class="landing-heading">
+          <span class="txt-xlg">Welcome to </span><span class="txt-xlg txt-strong">CASBA</span>
+        </div>
+        <div class="landing-text">
+          <p class="txt-md">A self-service application that provides customers with an alternative and convenient platform to carry out 24 hours banking transactions. It leverages on customer smart phone devices and PC web browsers powered by an artificial intelligent (AI) called <strong>Kira</strong>.</p>
+        </div>
+        <div class="app-availability no-padding">
+          <ul class="landing-available-on list-unstyled block">
+            <li>
+              <span class="landing-availability txt-sm	">Available for</span>
+            </li>
+            <li>
+              <i class="fa fa-mobile-phone"></i>
+            </li>
+            <li>
+              <i class="fa fa-tablet"></i>
+            </li>
+            <li>
+              <i class="fa fa-desktop"></i>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-store store-btn-repsonsive no-padding"><div class="apple-btn"></div></a>
+          <a href="#" class="btn btn-web store-btn-repsonsive no-padding"><div class="web-btn">Try it on <strong>Web</strong> now!</div></a>
+        </div>
+      </div>
+      <!--/Main landing content-->
+    </div>
+    <!-- /Main Content Inner -->
+  </div>
+</section>
+<!-- /Landing section -->
+<!-- Features section -->
+<section id="features">
+  <div class="container">
+    <!-- Features Content Inner -->
+    <div class="row margin-lg text-center">
+      <div class="col-lg-12 text-center margin-lg no-margin-top">
+        <span class="section-light section-title">features</span>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <div class="app-feature-box">
+          <div class="icon-box">
+            <i class="fa fa-tablet"></i>
+          </div>
+          <h3> DIGITAL </h3>
+          <p> Access your bank information via web or mobile. </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <div class="app-feature-box">
+          <div class="icon-box">
+            <i class="fa fa-table"></i>
+          </div>
+          <h3> ANALYTICS </h3>
+          <p> Push data to customers that represents real-time transactions. </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <div class="app-feature-box">
+          <div class="icon-box">
+            <i class="fa fa-comments"></i>
+          </div>
+          <h3> CHAT </h3>
+          <p> Direct conversation with your bank for personalised services. </p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <a href="#" class="btn btn-web store-btn-repsonsive no-padding"><div class="web-btn">Try it on <strong>Web</strong> now!</div></a>
+    </div>
+    <div class="row margin-lg text-center">
+      <div class="col-lg-12 text-center sub-title-margin">
+        <span class="sub-title-top">Application Features</span>
+        <span class="sub-title-bottom">Inline with CBN policies for <strong>Finanical Inclusion</strong> and <strong>Cashless Economy</strong></span>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 margin-lg">
+        <div class="app-overview-box aob-left">
+          <div class="overview-icon-box text-center">
+            <i class="fa fa-user"></i>
+          </div>
+          <h3> Account Opening</h3>
+          <p> Account opening identification and easy validation with BVN </p>
+        </div>
+        <div class="app-overview-box aob-left">
+          <div class="overview-icon-box text-center">
+            <i class="fa fa-map-marker"></i>
+          </div>
+          <h3>Bills Payment</h3>
+          <p> No cost in transaction charge when paying all your bills </p>
+        </div>
+        <div class="app-overview-box aob-left">
+          <div class="overview-icon-box text-center">
+            <i class="fa fa-map-marker"></i>
+          </div>
+          <h3>Funds Access</h3>
+          <p> Locate all your banks and ATMs for quick access to your cash </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 visible-lg visible-md visible-sm">
+        <div class="overview-device-wrapper">
+          <img src="{{ url_for('static',filename='img/app-overview.png') }}" class="img-responsive" alt="">
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 margin-lg">
+        <div class="app-overview-box aob-right">
+          <div class="overview-icon-box text-center">
+            <i class="fa fa-calculator"></i>
+          </div>
+          <h3>Financial Advice</h3>
+          <p> Manage your budget and savings for various time periods so as to save towards life goals… </p>
+        </div>
+        <div class="app-overview-box aob-right">
+          <div class="overview-icon-box text-center">
+            <i class="fa fa-clock-o"></i>
+          </div>
+          <h3>Complaint Resolution</h3>
+          <p>A chatbot that can answer all your various banking questions and issues 24/7</p>
+        </div>
+      </div>
+    </div>
+    <!-- /Features Content Inner -->
+  </div>
+</section>
+<!-- /Features section -->
+
+<!-- video start -->
+<section id="video" class="grey">
+  <div class="container">
+    <!-- footer Content Inner -->
+    <div class="row margin-lg text-center">
+      <div class="col-lg-12 margin-lg no-margin-top">
+        <span class="section-light section-title">video</span>
+      </div>
+      <div class="col-lg-12 text-center margin-lg no-margin-top">
+        <div class="vid-responsive">
+          <iframe src="https://www.youtube.com/watch?v=kKSOthyiZ-E" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- /footer Content Inner -->
+  </div>
+</section>
+<!-- video end -->
+
+<!-- Features Extra 1 section -->
+<section id="whyus" class="grey">
+  <div class="container">
+    <!-- Features Extra 1 Content Inner -->
+    <div class="row margin-lg text-center">
+      <div class="col-lg-12 margin-lg no-margin-top">
+        <span class="section-light section-title">Why CASBA</span>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 visible-lg visible-md visible-sm">
+        <div class="overview-device-wrapper">
+          <img src="{{ url_for('static',filename='img/app-ipad-overview.png') }}" class="img-responsive" alt="">
+        </div>
+      </div>
+      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 margin-lg">
+        <div class="feature-extra-box text-left">
+          <h2 class="overview-title">All About Our Value Proposition </h2>
+          <p class="overview-text">Users experience streamlined to just one touch point to access multiple interactions. Deep understanding of cloud computing data mining and IoT technologies.<br/><br/> Start Small and grow with cost effective measures. Iterative development focused on immediate costumer feedback. </p>
+          <ul class="list-unstyled feature-extra-list">
+            <li>
+              <i class="fa fa-check"></i> Single Interface
+            </li>
+            <li>
+              <i class="fa fa-check"></i> Core Expertise
+            </li>
+            <li>
+              <i class="fa fa-check"></i> On Demand Scalability
+            </li>
+            <li>
+              <i class="fa fa-check"></i> Lean and Agile
+            </li>
+          </ul>
+          <p class="overview-text block margin-sm">This in conjuction with technology consultaion is our way of providing truly digital value through our efficient, reliable and sustainable services.</p>
+          <a href="#" class="btn btn-web store-btn-repsonsive no-padding"><div class="web-btn">Try it on <strong>Web</strong> now!</div></a>
+
+        </div>
+      </div>
+    </div>
+    <!-- /Features Extra 1 Content Inner -->
+  </div>
+</section>
+<!-- /Features Extra 1 section -->
+<!-- cta section -->
+<section id="cta" class="cta">
+  <div class="container">
+    <!-- cta Content Inner -->
+    <div class="row margin-lg text-center">
+      <div class="col-lg-12">
+        <div class="feature-extra-box text-left">
+          <h2 class="txt-lg uppercase">We Are The Future Of Banking </h2>
+          <p class="txt-md block margin-sm">The use of insight to create an alternative platform for customers to carry out banking services. The Platform is fundamentally built with cloud computing resource and powered by an artificial intelligence to deliver personalized customer experiences.</p>
+          <a href="http://www.josla.com.ng" class="btn btn-primary btn-i-md uppercase txt-md">Find Out More</a>
+        </div>
+      </div>
+    </div>
+    <!-- /cta Content Inner -->
+  </div>
+</section>
+<!-- /cta section -->
+<!-- Features Extra 2 section -->
+<section id="information">
+  <div class="container">
+    <!-- Features Extra 2 Content Inner -->
+    <div class="row margin-lg text-center">
+      <div class="col-lg-12 margin-lg no-margin-top">
+        <span class="section-light section-title">Business Features of CASBA</span>
+      </div>
+      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 margin-lg">
+        <div class="feature-extra-box text-left">
+          <h2 class="overview-title">Bank Benefits</h2>
+          <span class="overview-text">CASBA is the future of Banking. A Cognitive application that has real time access to information, reducing the barrier for users to interact with their bank via natural language processes and offers 24hours support system. It would save banks up to 40% in technical support cost increasing their capability and also leveraging on technology argumentation.<br/><br/> Its unique analytics gives banks a 360º view of their customer sentiments as well as upsell/Cross-sell of new and exciting services.</span>
+          <ul class="list-unstyled feature-extra-list">
+            <li>
+              <i class="fa fa-cog"></i> Personalized Experience
+            </li>
+            <li>
+              <i class="fa fa-star"></i> Employee Productivity
+            </li>
+            <li>
+              <i class="fa fa-user"></i> Customer Acquisition
+            </li>
+            <li>
+              <i class="fa fa-heart"></i> Trust and Services
+            </li>
+            <li>
+              <i class="fa fa-check"></i> Digital Transformation
+            </li>
+            <li>
+              <i class="fa fa-globe"></i> Competitive Advantage
+            </li>
+            <li>
+              <i class="fa fa-cog"></i> Technical Support
+            </li>
+          </ul>
+          <a href="http://www.josla.com.ng/#contact" class="btn btn-web store-btn-repsonsive no-padding"><div class="web-btn">Engage us!</div></a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 visible-lg visible-md visible-sm">
+        <div class="overview-device-wrapper">
+          <img src="{{ url_for('static',filename='img/app-bank-overview.png') }}" class="img-responsive" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- /Features Extra 2 Content Inner -->
+  </div>
+</section>
+<!-- subscribe section -->
+<section id="subscribe">
+  <div class="container">
+    <!-- subscribe Content Inner -->
+    <div class="row margin-lg text-center">
+      <div class="col-lg-12 text-center margin-lg no-margin-top">
+        <span class="section-title">subscribe</span>
+      </div>
+      <div class="col-lg-12">
+          <form id="subscribeForm" role="form" action="{{ url_for('index') }}" method="post">
+          <div class="input-group">
+            <input type="email" value="" data-msg-required="Please enter your email address." placeholder="Your Email" data-msg-email="Please enter a valid email address." maxlength="100" class="form-control fc-contact" name="email" id="email" required>
+            <div class="input-group-btn">
+              <button type="submit" id="subscribe-submit" data-loading-text="..."><i class="fa fa-paper-plane"></i></button>
+            </div>
+          </div>
+        </form>
+        <p class="txt-md">Join out mailing list for news and information our our Application and other Value Propositions</p>
+      </div>
+    </div>
+    <!-- /subscribe Content Inner -->
+  </div>
+</section>
+<!-- /subscribe section -->
+<!-- Footer start -->
+
+<footer id="footer">
+  <div class="container">
+    <!-- footer Content Inner -->
+    <div class="row margin-sm">
+      <div class="col-lg-12 text-center">
+        <ul class="list-unstyled footer-items footer-social no-margin">
+          <li class="footer-social-item">
+            <a href="#" class="cbutton cbutton--effect-ivana">
+              <i class="cbutton__icon fa fa-twitter"></i>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a href="#" class="cbutton cbutton--effect-ivana">
+              <i class="cbutton__icon fa fa-facebook"></i>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a href="#" class="cbutton cbutton--effect-ivana">
+              <i class="cbutton__icon fa fa-google-plus"></i>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a href="#" class="cbutton cbutton--effect-ivana">
+              <i class="cbutton__icon fa fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+        <span>Copyright © 2015-2017 <a href="http://josla.com.ng.com" >Josla Electric Company Ltd</a></span>
+      </div>
+    </div>
+    <!-- /footer Content Inner -->
+  </div>
+</footer>
+<!-- Footer end -->
+
+{% endblock %}
